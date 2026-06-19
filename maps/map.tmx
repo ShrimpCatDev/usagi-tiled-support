@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="20" height="12" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="7">
+ <editorsettings>
+  <export target="map.lua" format="lua"/>
+ </editorsettings>
+ <tileset firstgid="1" name="sprites" tilewidth="16" tileheight="16" tilecount="256" columns="16">
+  <image source="../sprites.png" width="256" height="256"/>
+  <tile id="16">
+   <animation>
+    <frame tileid="16" duration="100"/>
+    <frame tileid="17" duration="100"/>
+    <frame tileid="18" duration="100"/>
+    <frame tileid="19" duration="100"/>
+    <frame tileid="20" duration="100"/>
+    <frame tileid="21" duration="100"/>
+    <frame tileid="22" duration="100"/>
+    <frame tileid="23" duration="100"/>
+    <frame tileid="24" duration="100"/>
+    <frame tileid="25" duration="100"/>
+    <frame tileid="26" duration="100"/>
+    <frame tileid="27" duration="100"/>
+    <frame tileid="28" duration="100"/>
+    <frame tileid="29" duration="100"/>
+    <frame tileid="30" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="48">
+   <animation>
+    <frame tileid="48" duration="900"/>
+    <frame tileid="49" duration="900"/>
+   </animation>
+  </tile>
+ </tileset>
+ <objectgroup id="3" name="bg" parallaxx="0" parallaxy="0">
+  <object id="1" x="0" y="0" width="320" height="192">
+   <properties>
+    <property name="color" type="int" value="15"/>
+    <property name="fill" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="3" x="0" y="96" width="320" height="96">
+   <properties>
+    <property name="color" type="int" value="14"/>
+    <property name="fill" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="4" x="-5.66667" y="89" width="341.333" height="3.33333">
+   <properties>
+    <property name="color" type="int" value="14"/>
+    <property name="fill" type="bool" value="true"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="6" name="clouds" width="20" height="12" parallaxx="0.5">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,4,5,6,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,4,5,6,0,0,0,0,0,0,0,0,0,0,0,0,4,5,6,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="1" name="terrain" width="20" height="12">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,0,0,0,0,
+0,0,0,0,0,0,0,49,0,7,0,0,3,3,3,3,0,0,0,0,
+0,0,0,0,0,0,0,3,3,3,0,0,1,2,2,1,0,0,0,0,
+0,0,0,0,0,7,0,1,2,1,0,0,1,2,2,1,0,0,0,0,
+3,3,3,3,3,3,3,1,2,1,3,3,1,2,2,1,3,3,3,3,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+</data>
+ </layer>
+ <layer id="4" name="water" width="20" height="12" parallaxx="1.8">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+33,33,33,33,33,33,33,33,33,33,33,33,33,33,33,33,33,33,33,33
+</data>
+ </layer>
+</map>
